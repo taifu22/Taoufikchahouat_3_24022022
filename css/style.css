@@ -322,13 +322,17 @@ footer .text-icon-footer p a {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  padding: 15px;
+  cursor: pointer;
   border-radius: 15px 15px 15px 15px;
   width: 100%;
   box-shadow: 0px 4px 5px #c4bdbd;
+  position: relative;
 }
 .main-page-restaurant .section-page-restaurant article .inside-article .title-article {
-  width: 70%;
+  width: 80%;
+  padding: 15px;
+  transition: all 320ms ease-in-out;
+  transform-origin: right 50%;
 }
 .main-page-restaurant .section-page-restaurant article .inside-article .title-article .h3-title-article {
   color: black;
@@ -348,7 +352,50 @@ footer .text-icon-footer p a {
 .main-page-restaurant .section-page-restaurant article .inside-article .h3-euro {
   border: none;
   color: black;
+  padding-top: 15px;
+  padding-right: 10px;
   width: auto;
+  transition: all 320ms ease-in-out;
+  position: absolute;
+  right: 10px;
+}
+.main-page-restaurant .section-page-restaurant article .inside-article .check {
+  transform: scaleX(0);
+  transition: all 320ms ease-in-out;
+  transform-origin: right 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-page-restaurant .section-page-restaurant article .inside-article .check .wrapIcon {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.main-page-restaurant .section-page-restaurant article .inside-article:hover .wrapIcon {
+  transform: rotate(0);
+}
+.main-page-restaurant .section-page-restaurant article .inside-article:hover .check {
+  opacity: 1;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  width: 60px;
+  transform: scaleX(1);
+}
+.main-page-restaurant .section-page-restaurant article .inside-article:hover .h3-euro {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  right: 70px;
+}
+.main-page-restaurant .section-page-restaurant article .inside-article:hover .title-article {
+  width: 60%;
 }
 .main-page-restaurant .button {
   width: 50%;
@@ -509,5 +556,45 @@ footer .text-icon-footer p a {
   .main-page-restaurant .button {
     width: 15%;
     height: 50px;
+  }
+}
+@-webkit-keyframes check {
+  0% {
+    transform: scaleX(0);
+  }
+  20% {
+    transform: scaleX(0.2);
+  }
+  40% {
+    transform: scaleX(0.4);
+  }
+  60% {
+    transform: scaleX(0.6);
+  }
+  80% {
+    transform: scaleX(0.8);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes check {
+  0% {
+    transform: scaleX(0);
+  }
+  20% {
+    transform: scaleX(0.2);
+  }
+  40% {
+    transform: scaleX(0.4);
+  }
+  60% {
+    transform: scaleX(0.6);
+  }
+  80% {
+    transform: scaleX(0.8);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }/*# sourceMappingURL=style.css.map */

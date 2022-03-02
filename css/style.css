@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+body, html {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: initial;
@@ -59,6 +65,12 @@ main nav .title-button button {
   font-size: 16px;
   margin-top: 20px;
   cursor: pointer;
+  transition: all 230ms ease-in-out;
+  opacity: 1;
+}
+main nav .title-button button:hover {
+  opacity: 0.8;
+  box-shadow: 3px 4px 5px #cfc7c7;
 }
 main nav .filters {
   margin-left: 20px;
@@ -94,36 +106,16 @@ main nav .filters .choice-filters .filter .choice {
   justify-content: center;
   width: 100%;
   height: 60px;
-  box-shadow: 0px 4px 5px #c4bdbd;
+  box-shadow: 1px 1px 12px #c4bdbd;
+  background-color: #f4f0f8;
   border-radius: 15px 15px 15px 15px;
 }
 main nav .filters .choice-filters .filter .choice p {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: bold;
-  font-size: large;
+  font-size: medium;
 }
 main nav .filters .choice-filters .filter .choice i {
-  margin-right: 5%;
-  color: #807e7e;
-}
-main nav .filters .choice-filters .filter .choice-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 60px;
-  box-shadow: 0px 4px 5px #c4bdbd;
-  border-radius: 15px 15px 15px 15px;
-  background-color: #ebe5f3;
-}
-main nav .filters .choice-filters .filter .choice-1 p {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: bold;
-  font-size: large;
-}
-main nav .filters .choice-filters .filter .choice-1 i {
   margin-right: 5%;
   color: #807e7e;
 }
@@ -166,7 +158,7 @@ main section .bloc-restaurants .card-restaurant .inside-card .heart {
 }
 main section .bloc-restaurants .card-restaurant .inside-card .heart .fas {
   color: transparent;
-  background-image: linear-gradient(red, blue);
+  background-image: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   position: absolute;
@@ -194,7 +186,7 @@ main section .bloc-restaurants .card-restaurant .button-new {
   top: 15px;
 }
 main section {
-  background-color: #e9e0e7;
+  background-color: #f4f0f8;
   margin-top: 20px;
   padding-bottom: 70px;
 }
@@ -440,6 +432,46 @@ footer .text-icon-footer p a {
   -webkit-animation-delay: 1.125s;
           animation-delay: 1.125s;
 }
+.main-page-restaurant .section-page-restaurant .article-1-2 .delay-1 {
+  -webkit-animation-delay: 0.0909090909s;
+          animation-delay: 0.0909090909s;
+}
+.main-page-restaurant .section-page-restaurant .article-1-2 .delay-2 {
+  -webkit-animation-delay: 0.1818181818s;
+          animation-delay: 0.1818181818s;
+}
+.main-page-restaurant .section-page-restaurant .article-1-2 .delay-3 {
+  -webkit-animation-delay: 0.2727272727s;
+          animation-delay: 0.2727272727s;
+}
+.main-page-restaurant .section-page-restaurant .article-1-2 .delay-4 {
+  -webkit-animation-delay: 0.3636363636s;
+          animation-delay: 0.3636363636s;
+}
+.main-page-restaurant .section-page-restaurant .article-2-2 .delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.main-page-restaurant .section-page-restaurant .article-2-2 .delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.main-page-restaurant .section-page-restaurant .article-2-2 .delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+.main-page-restaurant .section-page-restaurant .article-3-2 .delay-8 {
+  -webkit-animation-delay: 0.8888888889s;
+          animation-delay: 0.8888888889s;
+}
+.main-page-restaurant .section-page-restaurant .article-3-2 .delay-9 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.main-page-restaurant .section-page-restaurant .article-3-2 .delay-10 {
+  -webkit-animation-delay: 1.1111111111s;
+          animation-delay: 1.1111111111s;
+}
 .main-page-restaurant .button {
   width: 50%;
   height: 50px;
@@ -451,6 +483,12 @@ footer .text-icon-footer p a {
   margin-top: 20px;
   margin-bottom: 50px;
   cursor: pointer;
+  transition: all 230ms ease-in-out;
+  opacity: 1;
+}
+.main-page-restaurant .button:hover {
+  opacity: 0.8;
+  box-shadow: 3px 4px 5px #cfc7c7;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {

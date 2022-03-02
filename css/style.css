@@ -327,6 +327,13 @@ footer .text-icon-footer p a {
   width: 100%;
   box-shadow: 0px 4px 5px #c4bdbd;
   position: relative;
+  -webkit-animation: itemAppear 0.6s;
+          animation: itemAppear 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: scale(0);
 }
 .main-page-restaurant .section-page-restaurant article .inside-article .title-article {
   width: 80%;
@@ -396,6 +403,42 @@ footer .text-icon-footer p a {
 }
 .main-page-restaurant .section-page-restaurant article .inside-article:hover .title-article {
   width: 60%;
+}
+.main-page-restaurant .section-page-restaurant .article-1 .delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.main-page-restaurant .section-page-restaurant .article-1 .delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.main-page-restaurant .section-page-restaurant .article-1 .delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.main-page-restaurant .section-page-restaurant .article-2 .delay-4 {
+  -webkit-animation-delay: 0.4444444444s;
+          animation-delay: 0.4444444444s;
+}
+.main-page-restaurant .section-page-restaurant .article-2 .delay-5 {
+  -webkit-animation-delay: 0.5555555556s;
+          animation-delay: 0.5555555556s;
+}
+.main-page-restaurant .section-page-restaurant .article-2 .delay-6 {
+  -webkit-animation-delay: 0.6666666667s;
+          animation-delay: 0.6666666667s;
+}
+.main-page-restaurant .section-page-restaurant .article-3 .delay-7 {
+  -webkit-animation-delay: 0.875s;
+          animation-delay: 0.875s;
+}
+.main-page-restaurant .section-page-restaurant .article-3 .delay-8 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.main-page-restaurant .section-page-restaurant .article-3 .delay-9 {
+  -webkit-animation-delay: 1.125s;
+          animation-delay: 1.125s;
 }
 .main-page-restaurant .button {
   width: 50%;
@@ -558,43 +601,19 @@ footer .text-icon-footer p a {
     height: 50px;
   }
 }
-@-webkit-keyframes check {
+@-webkit-keyframes itemAppear {
   0% {
-    transform: scaleX(0);
-  }
-  20% {
-    transform: scaleX(0.2);
-  }
-  40% {
-    transform: scaleX(0.4);
-  }
-  60% {
-    transform: scaleX(0.6);
-  }
-  80% {
-    transform: scaleX(0.8);
+    transform: scale(0);
   }
   100% {
-    transform: scaleX(1);
+    transform: scale(1);
   }
 }
-@keyframes check {
+@keyframes itemAppear {
   0% {
-    transform: scaleX(0);
-  }
-  20% {
-    transform: scaleX(0.2);
-  }
-  40% {
-    transform: scaleX(0.4);
-  }
-  60% {
-    transform: scaleX(0.6);
-  }
-  80% {
-    transform: scaleX(0.8);
+    transform: scale(0);
   }
   100% {
-    transform: scaleX(1);
+    transform: scale(1);
   }
 }/*# sourceMappingURL=style.css.map */

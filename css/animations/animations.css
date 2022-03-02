@@ -1,0 +1,10 @@
+@-webkit-keyframes check {
+  0% {
+    opacity: 1;
+  }
+}
+@keyframes check {
+  0% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=animations.css.map */

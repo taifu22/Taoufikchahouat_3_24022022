@@ -160,6 +160,23 @@ main section .bloc-restaurants .card-restaurant .inside-card {
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 0px 6px 0px #0000002e;
 }
+main section .bloc-restaurants .card-restaurant .inside-card .heart {
+  font-size: 20px;
+  position: relative;
+}
+main section .bloc-restaurants .card-restaurant .inside-card .heart .fas {
+  color: transparent;
+  background-image: linear-gradient(red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
+  transition: all 230ms ease-in-out;
+}
+main section .bloc-restaurants .card-restaurant .inside-card .heart:hover .fas {
+  opacity: 1;
+  transform: scale(1.2);
+}
 main section .bloc-restaurants .card-restaurant p {
   padding-top: 5px;
 }
@@ -256,8 +273,24 @@ footer .text-icon-footer p a {
 .main-page-restaurant .image-restaurant-4 .icon-title-section h2, .main-page-restaurant .image-restaurant-3 .icon-title-section h2, .main-page-restaurant .image-restaurant-2 .icon-title-section h2, .main-page-restaurant .image-restaurant-1 .icon-title-section h2 {
   margin-left: 20px;
 }
-.main-page-restaurant .image-restaurant-4 .icon-title-section i, .main-page-restaurant .image-restaurant-3 .icon-title-section i, .main-page-restaurant .image-restaurant-2 .icon-title-section i, .main-page-restaurant .image-restaurant-1 .icon-title-section i {
+.main-page-restaurant .image-restaurant-4 .icon-title-section .heart, .main-page-restaurant .image-restaurant-3 .icon-title-section .heart, .main-page-restaurant .image-restaurant-2 .icon-title-section .heart, .main-page-restaurant .image-restaurant-1 .icon-title-section .heart {
+  font-size: 20px;
+  position: relative;
   margin-right: 20px;
+  cursor: pointer;
+}
+.main-page-restaurant .image-restaurant-4 .icon-title-section .heart .fas, .main-page-restaurant .image-restaurant-3 .icon-title-section .heart .fas, .main-page-restaurant .image-restaurant-2 .icon-title-section .heart .fas, .main-page-restaurant .image-restaurant-1 .icon-title-section .heart .fas {
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
+  transition: all 230ms ease-in-out;
+}
+.main-page-restaurant .image-restaurant-4 .icon-title-section .heart:hover .fas, .main-page-restaurant .image-restaurant-3 .icon-title-section .heart:hover .fas, .main-page-restaurant .image-restaurant-2 .icon-title-section .heart:hover .fas, .main-page-restaurant .image-restaurant-1 .icon-title-section .heart:hover .fas {
+  opacity: 1;
+  transform: scale(1.2);
 }
 .main-page-restaurant .image-restaurant-1 {
   background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -276,7 +309,7 @@ footer .text-icon-footer p a {
   background-color: white;
 }
 .main-page-restaurant .section-page-restaurant article {
-  margin: 20px;
+  margin: 15px;
   margin-top: 35px;
 }
 .main-page-restaurant .section-page-restaurant article h3 {
@@ -294,18 +327,28 @@ footer .text-icon-footer p a {
   width: 100%;
   box-shadow: 0px 4px 5px #c4bdbd;
 }
+.main-page-restaurant .section-page-restaurant article .inside-article .title-article {
+  width: 70%;
+}
 .main-page-restaurant .section-page-restaurant article .inside-article .title-article .h3-title-article {
   color: black;
   padding-bottom: 5px;
   border: none;
   width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .main-page-restaurant .section-page-restaurant article .inside-article .title-article p {
   font-size: small;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .main-page-restaurant .section-page-restaurant article .inside-article .h3-euro {
   border: none;
   color: black;
+  width: auto;
 }
 .main-page-restaurant .button {
   width: 50%;
@@ -453,6 +496,7 @@ footer .text-icon-footer p a {
     background-color: white;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     padding: 0;
     box-shadow: 0px 4px 5px #c4bdbd;
     border-radius: 0 0 25px 25px;
@@ -460,6 +504,7 @@ footer .text-icon-footer p a {
   }
   .main-page-restaurant .section-page-restaurant article {
     margin-bottom: 40px;
+    width: 30%;
   }
   .main-page-restaurant .button {
     width: 15%;

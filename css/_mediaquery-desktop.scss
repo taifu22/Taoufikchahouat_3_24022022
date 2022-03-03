@@ -1,0 +1,111 @@
+@media screen and (min-width: 992px) {
+    header {
+        .logo {
+            img {
+                width: 15%;
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        nav {
+            .title-button {
+                button {
+                    width: 15%;
+                    height: 50px;
+                    background: linear-gradient($primary_color,$secondary_color);
+                    color: white;
+                    border: none;
+                    border-radius: 25px 25px 25px 25px;
+                    font-size: 16px;
+                    margin-top: 20px;
+                }
+            }
+            .filters {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 80px;
+                width: 100%;
+                .choice-filters {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    .filter {
+                        width: 25%;
+                        .choice {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }   
+        }
+        section {
+            width: 60%;
+            align-self: center;
+            padding: 25px;
+            margin-bottom: 70px;
+            border-radius: 25px 25px 25px 25px;
+            h2 {
+                width: 100%;
+                padding-top: 0;
+            }
+            .bloc-restaurants {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                a {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-page-restaurant { 
+        img {
+            width: 15%;
+        }
+    }
+
+    .main-page-restaurant {
+        .image-restaurant-1, .image-restaurant-2, .image-restaurant-3, .image-restaurant-4{
+            display: flex;
+            flex-direction: column;
+            .icon-title-section {
+                width: 90%;
+                align-self: center;
+            }
+        }
+        .section-page-restaurant{
+            width: 90%;
+            margin-left: -20px;
+            margin-top: 0;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0;  
+            box-shadow: 0px 4px 5px #c4bdbd;
+            border-radius: 0 0 25px 25px;
+            margin-bottom: 50px;
+            article {
+                margin-bottom: 40px;
+                width: 30%;
+            }
+        }
+        .button {
+            width: 15%;
+            height: 50px;
+        } 
+    }
+}

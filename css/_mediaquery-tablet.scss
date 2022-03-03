@@ -1,0 +1,70 @@
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    
+    header {
+        .logo {
+            img {
+                width: 20%;
+            }
+        }
+    }        
+    
+    .header-page-restaurant {
+        img {
+            width: 25%;
+        }
+    }
+    
+    main {
+        nav {
+            .filters {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 80px;
+                .choice-filters {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .filter {
+                        width: 50%;
+                        .choice {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+                @extend %filters
+            }
+        }
+        section {
+            h2 {
+                width: 100%;
+            }
+            .bloc-restaurants {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                a {
+                    width: 50%;
+                }
+                @extend %bloc-restaurants-homepage
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-page-restaurant {
+            .button {
+                width: 20%;
+            }
+    }
+}
+
+
+
+
